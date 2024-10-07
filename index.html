@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Nat.IO Servicio de alertas</title>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Nat.IO</h1>
+    </header>
+ 
+
+    <main class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="card" style="width: 36rem; height: 32rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title d-flex justify-content-center">Informe diario </h4>
+              <h5 class="card-title d-flex justify-content-center">Estimado H&V Ingeniería</h5>
+              <p class="card-text">
+
+                Hemos detectado una posible amenaza en uno de sus activos, Estación 1. Se ha registrado la presencia de Person con una cuenta de 20 individuos a las 3:26 del día 7/10/2024. Le recomendamos tomar acción inmediata para asegurar la protección de su propiedad.</p>
+              <p class="card-title" id="person-name">Object: ></p>
+              <p class="card-text" id="count">Count: </p>
+              <p class="card-text" id="date">Date: </p>
+              <p class="card-text" id="timestamp">Timestamp: </p>
+              <p class="card-text" id="device">Device: </p>
+              <p class="card-text" id="Connected">Conexion: </p>
+              <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary">Contactar</a></div>
+              
+            </div>
+          </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nat.IO</h4>
+                <p>Nat.IO es una empresa líder en soluciones IoT para la protección y optimización de activos
+                    industriales. Exploramos nuevas fronteras tecnológicas para hacer más seguras y eficientes las
+                    operaciones de nuestros clientes.</p>
+            </div>
+
+            <div class="footer-section footer-links">
+                <h4>Enlaces útiles</h4>
+                <a href="#">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Soluciones</a>
+                <a href="#">Blog</a>
+                <a href="#">Contáctanos</a>
+            </div>
+
+            <div class="footer-section social-icons">
+                <h4>Redes Sociales</h4>
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="icon-linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+<script>
+    const data = {
+        Object: "Person",
+        Count: 20,
+        date: "7/10/2024",
+        timestamp: "3:26",
+        device: "AMB82",
+        Connected: "Conect"
+
+    };
+
+    // Asignar los valores del JSON a los elementos de la tarjeta
+    document.getElementById("person-name").textContent = `Object: ${data.Object}`;
+    document.getElementById("count").textContent = `Count: ${data.Count}`;
+    document.getElementById("date").textContent = `Date: ${data.date}`;
+    document.getElementById("timestamp").textContent = `Timestamp: ${data.timestamp}`;
+    document.getElementById("device").textContent = `Device: ${data.device}`;
+    document.getElementById("Connected").textContent = `Conexion: ${data.Connected}`;
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>

@@ -1,0 +1,100 @@
+ /* Colores de la paleta de Nat.IO (ajusta estos valores según tu paleta exacta) */
+ :root {
+    --primary-color: #000000;  /* Azul primario Nat.IO */
+    --secondary-color: #ffae00; /* Azul oscuro */
+    --accent-color: #ffae00;  /* Azul claro/accento */
+    --text-color: #000000;  /* Color de texto principal */
+    --footer-bg: #2c2c2c;  /* Color de fondo del footer */
+    --footer-text: #ffffff;  /* Texto del footer */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 40px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--footer-text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
